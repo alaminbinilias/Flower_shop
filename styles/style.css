@@ -149,6 +149,7 @@ body{
     }
     .fresh_flower_desc h3{
         font-size:1.5rem ;
+        max-width: 11.93rem;
     }
     .fresh_flower_desc p{
         font-size: 0.87rem;
@@ -160,6 +161,7 @@ body{
     .plant_section{
         width: calc(100% - 30px );
         margin: 0 auto;
+        margin-bottom: 2.56rem;
     }
     .plant_section h3{
         font-size: 1.5rem;
@@ -176,6 +178,11 @@ body{
 
     .card_item img{
         width: 100%;
+    }
+
+    .cart_btn{
+        font-size: 0.8rem;
+        font-weight: 600;
     }
 
 
