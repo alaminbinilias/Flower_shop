@@ -24,12 +24,16 @@ body{
     --primary-color:#E95A08;
 }
 
+.all_section{
+    max-width: 71.25rem;
+    margin: 0 auto;
+}
+
 
 
 /*Hero Section*/
 .flower_section{
-    max-width: 71.25rem;
-    margin: 0 auto;
+    margin-bottom: 120px;
 }
 
 .fresh_flower{
@@ -56,6 +60,58 @@ body{
 }
 
 
+/*card section*/
+
+.plant_section{
+    text-align: center;
+    margin-bottom: 210px;
+}
+.plant_section h3{
+    font-weight: bold;
+    font-size: 3.12rem;
+    margin-bottom: 10px;
+}
+.plant_section p{
+    font-size: 1.37rem;
+    line-height: 30px;
+    max-width: 53rem;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 49px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px 30px;
+}
+.card_item{
+    max-width: 16.87rem;
+}
+.card_item p{
+    margin-top: 30px;
+    color:black;
+    font-weight: 500;
+    font-size: 1.37rem;
+    margin-bottom: 0px;
+}
+.card_item h3{
+    margin-top: 20px;
+    font-size: 1.37rem;
+    margin-bottom: 30px;
+}
+.cart_btn{
+    width: 100%;
+    padding: 17px 80px;
+    background-color: var(--primary-color);
+    color: #FFFF;
+    border: none;
+    cursor: pointer;
+}
+.cart_btn:hover{
+    background-color: burlywood;
+    color: #000;
+}
 
 
 
@@ -101,4 +157,26 @@ body{
         max-width: 100%;
 
     }
+    .plant_section{
+        width: calc(100% - 30px );
+        margin: 0 auto;
+    }
+    .plant_section h3{
+        font-size: 1.5rem;
+    }
+    .plant_section p{
+        font-size: 0.87rem;
+        line-height: 20px;
+    }
+
+    .card{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+
+    .card_item img{
+        width: 100%;
+    }
+
+
 }
