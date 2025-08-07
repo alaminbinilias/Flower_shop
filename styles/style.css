@@ -1,0 +1,104 @@
+/*All custom Font are there*/
+
+
+.noto-serif{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*Shared Styles*/
+
+body{
+    background-color: aliceblue;
+    margin: 0px;
+}
+:root{
+    --primary-color:#E95A08;
+}
+
+
+
+/*Hero Section*/
+.flower_section{
+    max-width: 71.25rem;
+    margin: 0 auto;
+}
+
+.fresh_flower{
+    display: flex;
+    align-items: center;
+}
+
+.fresh_flower_desc{
+    max-width: 35.6rem;
+}
+
+.fresh_flower_desc h3{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 0px;
+}
+.clr{
+    color:var(--primary-color) ;
+}
+
+.fresh_flower_desc p{
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive Part*/
+
+@media screen and (max-width:700px) {
+    .fresh_flower{
+        flex-direction: column-reverse;
+    }
+    .fresh_flower_desc{
+        width: calc(100% - 30px );
+        margin: 0 auto;
+    }
+    .fresh_flower_desc h3{
+        font-size:1.5rem ;
+    }
+    .fresh_flower_desc p{
+        font-size: 0.87rem;
+    }
+    .fresh_flower_img img{
+        max-width: 100%;
+
+    }
+}
