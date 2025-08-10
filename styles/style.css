@@ -64,7 +64,6 @@ body{
 
 .plant_section{
     text-align: center;
-    margin-bottom: 210px;
 }
 .plant_section h3{
     font-weight: bold;
@@ -102,19 +101,111 @@ body{
 }
 .cart_btn{
     width: 100%;
-    padding: 17px 80px;
+    padding: 1.06rem 5rem;
     background-color: var(--primary-color);
     color: #FFFF;
     border: none;
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
 }
 .cart_btn:hover{
     background-color: burlywood;
     color: #000;
 }
 
+/*Plant_section*/
+
+.flower_plants{
+    margin-bottom: 133px;
+}
+
+.flower_plants_section{
+    display: flex;
+    column-gap: 60px;
+}
 
 
+
+.flower_plants_title h3{
+    font-weight: bold;
+    font-size: 3.12rem;
+    max-width: 30rem;
+}
+
+.flower_plants_title ul li{
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+.trusted_brdge img{
+    height: 286px;
+    width: 286px;
+    position:relative;
+    left: 350px;
+    top: 140px;
+}
+/*.deals{
+    margin-bottom: 120px;
+}
+.deals h3,p{
+    text-align: center;
+}
+
+.deals h3{
+    font-weight: bold;
+    font-size: 3.12rem;
+}
+.lts{
+    color: var(--primary-color);
+}
+.deals p{
+    font-size: 1.37rem;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 888px;
+    margin: 0 auto;
+    margin-top: -30px;
+    line-height: 30px;
+}
+
+
+.special_deals{
+    margin-bottom: 120px;
+}
+
+
+.search{
+    background: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search{
+    height: 33.31rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.seach_dv{
+    width: 830px;
+    margin: 0 auto;
+}
+
+.seach_dv h3{
+    font-size: 3.12rem;
+    color: #FFFF;
+    text-align: center;
+}
+
+input{
+    padding-left: 20px;
+    padding-right: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.s_btn{
+    padding: 20px 53px;
+}*/
 
 
 
@@ -181,9 +272,35 @@ body{
     }
 
     .cart_btn{
-        font-size: 0.8rem;
-        font-weight: 600;
+        padding:18px 30px;
     }
 
+    .trusted_brdge{
+        display: none;
+    }
+    .flower_plants_section{
+        width: calc(100% - 30px );
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .flower_plants img{
+        width: 100%;
+    }
 
+    .flower_plants_title h3{
+        font-size: 1.5rem;
+    }
+    .flower_plants_title ul li {
+        font-size: 0.87rem;
+    }
+    .deals{
+        margin-top:-50px;
+    }
+    .deals h3{
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+    .deals p{
+        font-size: 0.87rem;
+    }
 }
