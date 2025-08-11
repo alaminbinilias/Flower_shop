@@ -207,89 +207,78 @@ input{
     padding: 20px 53px;
 }*/
 
-.special{
-   display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-}
-.special_card_item1{
-    background-image: url("../assets/deal-ana.png");
-    width: 22.87rem;
-    height: 12.87rem;
-    background-repeat:no-repeat;
-    background-position: center;
-    border-radius: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.special_card_item2{
-    background-image: url("../assets/deal-zabo.png");
-    background-repeat:no-repeat;
-    background-position: center;
-    grid-row: span 2;
-    border-radius: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.special_card_item3{
-    background-image: url("../assets/deal-bloom.png");
-    width: 22.87rem;
-    height: 12.87rem;
-    background-repeat:no-repeat;
-    background-position: center;
-    border-radius: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.special_card_item1 h3{
-    color: #FFFF;
-    font-weight: bold;
-    font-size: 1.25rem;
-}
-.special_card_item1 li{
-    list-style: none;
-    text-align: center;
-}
-.special_card_item1 li a{
-    color: #FFFF;
-}
-
-.special_card_item2 h3{
-    color: #FFFF;
-    font-weight: bold;
-    font-size: 1.25rem;
-
-}
-.special_card_item2 li{
-    list-style: none;
-    text-align: center;
-}
-.special_card_item2 li a{
-    color: #FFFF;
-}
-
-
-.special_card_item3 h3{
-    color: #FFFF;
-    font-weight: bold;
-    font-size: 1.25rem;
-
-}
-.special_card_item3 li{
-    list-style: none;
-    text-align: center;
-}
-.special_card_item3 li a{
-    color: #FFFF;
-}
-
-.special_deals{
+.special_coupons{
     margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 25px;
 }
+
+.coupons_item{
+    width: 22.93rem;
+    height: 12.56rem;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.coupons_item h2{
+    color: #FFFF;
+    font-weight: bold;
+    font-size: 1.37rem;
+
+}
+.coupons_item li{
+    list-style: none;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: -7px;
+}
+.coupons_item li a{
+    color: #FFFF;
+}
+
+
+.img_2 h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.img_2 li{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-top: -18px;
+}
+
+/*for_coupons_images*/
+.img_1{
+    background-image: url("../assets/deal-bloom.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img_2{
+    background-image: url("../assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+    width: 100%;
+    grid-row: span 2;
+    height: 423.13px;
+
+}
+.img_3{
+    background-image: url("../assets/deal-ana.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* End of_coupons_images*/
+
+
 
 
 .footer_section{
@@ -485,6 +474,7 @@ input{
     .subscribe-section{
         width: calc(100% - 30px);
         margin: 0 auto;
+        margin-top: 30px;
     }
     .search_section h2{
         font-size: 1.25rem;
@@ -525,4 +515,40 @@ input{
         margin-top:30px;
         margin-left: 0px;
     }
+    .special_coupons{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img_2{
+        grid-column: span 1;
+        grid-row: span 1;
+        height: 12.87rem;
+    }
+
+    .special_coupons{
+        width: calc(100% - 20px);
+        margin: 0 auto;
+    }
+    .img_1,.img_3{
+        width: 100%;
+    }
+
+    .img2 li>a{
+        margin-top: 200px;
+    }
+
+
+    .coupons_item h2{
+        color: #FFFF;
+        font-weight: bold;
+        font-size: 1.37rem;
+    }
+
+    .coupons_item li{
+        list-style: none;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .img_2 li{
+    margin-top: -7px;
+}
 }
