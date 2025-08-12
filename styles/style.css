@@ -326,14 +326,18 @@ input{
     "C B B";
 }
 
-
+footer{
+    margin-bottom: 30px;
+    margin-top: -100px;
+}
 
 .footer_section{
     width: 70rem;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    justify-content:space-between;
-    margin-bottom: 20px;
+    justify-content:space-evenly;
+    margin-bottom: 50px;
+    margin: 0 auto;
 }
 .footer_item{
     display: grid;
@@ -387,6 +391,8 @@ input{
 
 .footer_section{
     margin-top: -120px;
+
+    
 }
 
 
@@ -402,17 +408,23 @@ input{
 
 .footer_item{
     margin-top: -20px;
+    
 }
 
 .f_item{
     list-style: none;
     color: #6B7280;
+    margin-left: 30px;
 }
 
 .f_images{
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.f_images img{
+    cursor: pointer;
 }
 
 .footer_logo{
@@ -474,9 +486,15 @@ input{
     .fresh_flower_desc h3{
         font-size:1.5rem ;
         max-width: 11.93rem;
+        visibility: hidden;
+    }
+    .for_br{
+        visibility: visible;
     }
     .fresh_flower_desc p{
         font-size: 0.87rem;
+        text-align: left;
+        line-height: 20px;
     }
     .fresh_flower_img img{
         max-width: 100%;
@@ -506,6 +524,8 @@ input{
 
     .cart_btn{
         padding:18px 30px;
+        font-size: 0.7rem;
+        font-weight: 600;
     }
 
     .trusted_brdge{
@@ -540,9 +560,11 @@ input{
     }
 
     .subscribe-section{
-        width: calc(100% - 30px);
         margin: 0 auto;
         margin-top: 30px;
+        background-size: cover;
+        background-position: center center;
+        height: 25rem;
     }
     .search_section h2{
         font-size: 1.25rem;
@@ -578,6 +600,7 @@ input{
 
     .footer_item{
         grid-template-columns: repeat(1,1fr);
+        
     }
     .footer_logo{
         margin-top:30px;
@@ -592,6 +615,11 @@ input{
     .img_3{
         grid-area: C;
     }
+
+    .footer_item{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    } 
 
     .special_coupons{
         grid-template-columns: repeat(1,1fr);
@@ -625,5 +653,15 @@ input{
 
     .sp_deals{
         margin-top: 30px;
+    }
+
+    .plant_section{
+        margin-top: -60px;
+    }
+    .f_item{
+        margin-left:0px ;
+    }
+    .deals p{
+        line-height: 20px;
     }
 }
