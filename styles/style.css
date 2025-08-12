@@ -180,6 +180,7 @@ body{
     position:relative;
     left: 350px;
     top: 140px;
+    animation: rotates 15s ease-in-out 1s infinite alternate;
 }
 .deals{
     margin-bottom: 120px;
@@ -435,7 +436,18 @@ footer{
     list-style: none;
 }
 
+/* animations*/
 
+
+
+@keyframes rotates {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
 
 
 
@@ -623,16 +635,22 @@ footer{
 
     .special_coupons{
         grid-template-columns: repeat(1,1fr);
-        width: calc(100% - 50px);
+        width: calc(100% - 30px);
         margin: 0 auto;
         justify-content: center;
         grid-template-areas: "A"
         "C"
         "B";
     }
+    .img_1{
+        width: 100%;
+    }
     .img_2{
         height: 12.87rem;
-        width: 22.93rem;
+        width: 100%;
+    }
+    .img_3{
+        width: 100%;
     }
 
 
