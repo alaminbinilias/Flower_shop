@@ -29,7 +29,43 @@ body{
     margin: 0 auto;
 }
 
+/*Nav_Section*/
 
+
+.nv_section{
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+.nv_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nv_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nv_section_item a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+}
+.hme{
+    font-weight: bold;
+}
+
+.spe{
+    color: #6B7280;
+}
+
+
+
+
+/*End Nav_Section*/
 
 /*Hero Section*/
 .flower_section{
@@ -207,13 +243,6 @@ input{
     padding: 20px 53px;
 }*/
 
-.special_coupons{
-    margin-bottom: 120px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    row-gap: 25px;
-}
-
 .coupons_item{
     width: 22.93rem;
     height: 12.56rem;
@@ -264,11 +293,8 @@ input{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    grid-column: span 2;
-    width: 100%;
-    grid-row: span 2;
-    height: 423.13px;
-
+    width: auto;
+    height: 26.44rem;
 }
 .img_3{
     background-image: url("../assets/deal-ana.png");
@@ -278,6 +304,27 @@ input{
 }
 /* End of_coupons_images*/
 
+
+/*grid Tamplate areas*/
+
+.img_1{
+    grid-area: A;
+}
+.img_2{
+    grid-area: B;
+}
+.img_3{
+    grid-area: C;
+}
+
+.special_coupons{
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    grid-template-areas: "A B B"
+    "C B B";
+}
 
 
 
@@ -396,6 +443,27 @@ input{
 /*Responsive Part*/
 
 @media screen and (max-width:700px) {
+    
+    .nv_section_item{
+        display: none;
+    }
+
+    .hd{
+        display: block;
+    }
+
+    nav{
+        margin-top: 20px;
+    }
+
+    .nv_section{
+        
+        width: calc(100% - 40px);
+        margin: 20px auto;
+    }
+
+
+
     .fresh_flower{
         flex-direction: column-reverse;
     }
@@ -515,25 +583,28 @@ input{
         margin-top:30px;
         margin-left: 0px;
     }
-    .special_coupons{
-        grid-template-columns: repeat(1,1fr);
+    .img_1{
+        grid-area: A;
     }
     .img_2{
-        grid-column: span 1;
-        grid-row: span 1;
-        height: 12.87rem;
+        grid-area: B;
+    }
+    .img_3{
+        grid-area: C;
     }
 
     .special_coupons{
-        width: calc(100% - 20px);
+        grid-template-columns: repeat(1,1fr);
+        width: calc(100% - 50px);
         margin: 0 auto;
+        justify-content: center;
+        grid-template-areas: "A"
+        "C"
+        "B";
     }
-    .img_1,.img_3{
-        width: 100%;
-    }
-
-    .img2 li>a{
-        margin-top: 200px;
+    .img_2{
+        height: 12.87rem;
+        width: 22.93rem;
     }
 
 
@@ -549,6 +620,10 @@ input{
         font-size: 1rem;
     }
     .img_2 li{
-    margin-top: -7px;
-}
+        margin-top: -7px;
+    }
+
+    .sp_deals{
+        margin-top: 30px;
+    }
 }
